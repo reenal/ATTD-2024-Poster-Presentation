@@ -1,0 +1,39 @@
+sas_files:
+  # biomarker_ascorbic_acid: ascorbic_acid_niddk.sas7bdat
+  # biomarker_carotinoids: carotenoids_niddk.sas7bdat
+  # biomarker_cholesterol: cholesterol_niddk.sas7bdat
+  # biomarker_fatty_acids: fatty_acids_niddk.sas7bdat
+  # biomarker_retinol: retinol_niddk.sas7bdat
+  # biomarker_tocopherols: tocopherols_niddk.sas7bdat
+  # biomarker_vitd: vitd_niddk.sas7bdat
+  # diagnostic_diabetes: diabetes_diagnosis.sas7bdat
+  # diagnostic_physical_exam: physical_exam.sas7bdat
+  # diagnostic_test_results: test_results.sas7bdat
+  # behavioural_cbcl: cbcl.sas7bdat
+  # behavioural_three_month_interview: three_month_interview.sas7bdat
+  # enrollment_form: enrollment_form.sas7bdat
+  # genetic_ab_atrisk: mp68_ab_atrisk_masked.sas7bdat
+  # genetic_ab_titers: mp68_ab_titers_masked.sas7bdat
+  # genetic_all_grs: mp68_all_grs_masked.sas7bdat
+  # genetic_demographics: mp68_demographics_masked.sas7bdat
+  # genetics_grs2_scores: grs2_full.txt
+  #genetic_family_histories: mp68_family_histories_masked.sas7bdat
+  #genetic_growth: mp68_growth_masked.sas7bdat
+
+csv_files:
+  diagnostic_diabetes: DIABETES_DIAGNOSIS.csv
+  diagnostic_diabetes_management: DIABETES_MANAGEMENT.csv
+  diagnostic_test_results: TEST_RESULTS.csv
+  demographic_family_relatives: FAMILY_RELATIVE.csv
+  behavioural_questionnaire: SIX_MONTH_PARENT_QUESTIONNAIRE.CSV
+  behavioural_screening: SCREENING_FORM.CSV
+
+data_path: data
+data:
+  raw: ${hydra.runtime.cwd}/data/raw
+  interim: ${hydra.runtime.cwd}/data/interim
+  processed: ${hydra.runtime.cwd}/data/processed
+  output: ${hydra.runtime.cwd}/data/output
+# int_type: -1
+# float_type: -1.0
+# str_type: ''
